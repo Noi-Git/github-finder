@@ -38,6 +38,9 @@ class App extends Component {
     this.setState({ users: res.data.items, loading: false });
   };
 
+  // Clear users from state
+  clearUsers = () => this.setState({ users: [], loading: false });
+
   render() {
     return (
       <div>
